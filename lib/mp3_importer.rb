@@ -8,7 +8,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{@path}/**/*.mp3"].collect do |song_names|
+    Dir["#{@path}/*.mp3"].collect do |song_names|
        song_names.gsub(/.*[\/]/, '')
     end
   end
